@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EcoCollect</string>
+    <string name="button">Button</string>
+    <string name="waste_collection">Waste Collection</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+</resources>
