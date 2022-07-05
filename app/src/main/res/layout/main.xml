@@ -4,66 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainimage"
+    android:background="@drawable/mainimag"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Login"
         tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="149dp"
+        android:layout_marginLeft="101dp"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="149dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/dashboardb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginRight="46dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Dashboard"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="101dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/reportb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="44dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Report"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/settingsb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Settings"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/homeb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="280dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Home"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/contactb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="101dp"
+        android:layout_marginBottom="149dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Contact"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="538dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,17 +9,40 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Button btn = findViewById(R.id.button);
+        Button homeb = findViewById(R.id.homeb);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        homeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(it);
+//                finish();
+            }
+        });
+
+        Button contactbtn = findViewById(R.id.contactb);
+
+        contactbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, Contact.class);
+                startActivity(it);
+//                finish();
+            }
+        });
+
+        Button loginb = findViewById(R.id.loginb);
+
+        loginb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(MainActivity.this, Login.class);
@@ -27,62 +50,35 @@ public class MainActivity extends Activity {
 //                finish();
             }
         });
-        setContentView(R.layout.main);
 
-        Button btn2 = findViewById(R.id.button2);
+        Button dashboardb = findViewById(R.id.dashboardb);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        dashboardb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Login.class);
+                Intent it = new Intent(MainActivity.this, Dashboard.class);
                 startActivity(it);
 //                finish();
             }
         });
-        setContentView(R.layout.main);
 
-        Button btn3 = findViewById(R.id.button3);
+        Button settingsb = findViewById(R.id.settingsb);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        settingsb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Login.class);
+                Intent it = new Intent(MainActivity.this, Settings.class);
                 startActivity(it);
 //                finish();
             }
         });
-        setContentView(R.layout.main);
 
-        Button btn4 = findViewById(R.id.button4);
+        Button reportb = findViewById(R.id.reportb);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        reportb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Login.class);
-                startActivity(it);
-//                finish();
-            }
-        });
-        setContentView(R.layout.main);
-
-        Button btn7 = findViewById(R.id.button7);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Login.class);
-                startActivity(it);
-//                finish();
-            }
-        });
-        setContentView(R.layout.main);
-
-        Button btn6 = findViewById(R.id.button6);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, Login.class);
+                Intent it = new Intent(MainActivity.this, Report.class);
                 startActivity(it);
 //                finish();
             }
