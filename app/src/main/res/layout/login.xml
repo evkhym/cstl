@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@drawable/loginpagechnge1"
+    android:background="@drawable/loginpagechnge"
     android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputEditText
