@@ -1,29 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/contactagain"
-    tools:context=".Contact">
+    android:background="@drawable/contactchange"
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/nametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_weight="1"
+        android:text="Name   |"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="330dp" />
 
-    <TextView
-        android:id="@+id/textView"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/logincontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="337dp"/>
+        android:layout_weight="1"
+        android:hint="Input Here Please"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="322dp" />
 
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Email    |"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emaillogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Input Here Please"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/messagelogin"
+        android:layout_width="258dp"
+        android:layout_height="226dp"
+        android:layout_weight="1"
+        android:hint="Type your message here, please."
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="412dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
