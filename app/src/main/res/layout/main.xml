@@ -1,83 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainimag"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/loginb"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonwright"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="280dp"
         android:background="@drawable/loginbuttonmainpage"
-        android:text="Login"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="149dp"
-        android:layout_marginLeft="101dp"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="149dp" />
+        android:text="Dashboard" />
 
     <Button
-        android:id="@+id/dashboardb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_marginRight="46dp"
+        android:id="@+id/button6"
+        android:layout_width="85dp"
         android:background="@drawable/loginbuttonmainpage"
-        android:text="Dashboard"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="85dp"
+            android:background="@drawable/loginbuttonmainpage"
+            android:layout_marginHorizontal="135dp"
+            android:layout_marginTop="120dp"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/loginbuttonmainpage"
+            android:text="Report" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/reportb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
-        android:layout_marginRight="44dp"
+        android:id="@+id/button9"
+        android:layout_width="85dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/loginbuttonmainpage"
-        android:text="Report"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginHorizontal="110dp"
+        android:layout_height="wrap_content"
+        android:text="Contact" />
 
     <Button
-        android:id="@+id/settingsb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="46dp"
-        android:layout_marginBottom="88dp"
+        android:id="@+id/button10"
+        android:layout_width="85dp"
         android:background="@drawable/loginbuttonmainpage"
-        android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="280dp"
+        android:text="Settings" />
 
-    <Button
-        android:id="@+id/homeb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="280dp"
-        android:background="@drawable/loginbuttonmainpage"
-        android:text="Home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/contactb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="101dp"
-        android:layout_marginBottom="149dp"
-        android:background="@drawable/loginbuttonmainpage"
-        android:text="Contact"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
