@@ -86,52 +86,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnemail"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginHorizontal="172dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/loginbuttonmainpage"
         android:text="Go!"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:background="@mipmap/bar">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="인텐트를 활용한 이메일 보내기"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:layout_gravity="center"
-            android:textSize="30dp" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/email"/>
-
-        <TextView
-            android:id="@+id/btnemail"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="문의 하기"
-            android:textStyle="bold"
-            android:textColor="#D61414"
-            android:textSize="40dp" />
-    </LinearLayout>
 
 </LinearLayout>
 

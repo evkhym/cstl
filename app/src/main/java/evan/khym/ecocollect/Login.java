@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
                 Intent it = new Intent(Login.this, Login.class);
                 startActivity(it);
 //                finish();
-                Toast.makeText(this,"This is a Toast Message.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"This is a Toast Message.", Toast.LENGTH_SHORT).show();
             }
         });
 
