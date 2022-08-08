@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/buttonwright"
+        android:id="@+id/dashboardb"
         android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -16,7 +16,7 @@
         android:text="Dashboard" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/loginb"
         android:layout_width="85dp"
         android:background="@drawable/loginbuttonmainpage"
         android:layout_marginHorizontal="110dp"
@@ -25,30 +25,30 @@
         android:text="Login" />
 
     <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="200dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/homeb"
             android:layout_width="85dp"
             android:background="@drawable/loginbuttonmainpage"
-            android:layout_marginHorizontal="135dp"
+            android:layout_marginLeft="135dp"
             android:layout_marginTop="120dp"
             android:layout_height="wrap_content"
             android:text="Home" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/reportb"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="120dp"
             android:background="@drawable/loginbuttonmainpage"
             android:text="Report" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/contactb"
         android:layout_width="85dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/loginbuttonmainpage"
@@ -57,7 +57,7 @@
         android:text="Contact" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/settingsb"
         android:layout_width="85dp"
         android:background="@drawable/loginbuttonmainpage"
         android:layout_height="wrap_content"

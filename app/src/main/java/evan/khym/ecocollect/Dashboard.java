@@ -18,7 +18,7 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 
-        Button dash = findViewById(R.id.button5);
+        Button dash = findViewById(R.id.dashbtn);
 
         dash.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,3 +28,5 @@ public class Dashboard extends AppCompatActivity {
 //                finish();
             }
         });
+    }
+}

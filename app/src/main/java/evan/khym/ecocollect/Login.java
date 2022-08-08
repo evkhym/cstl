@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +21,7 @@ public class Login extends AppCompatActivity {
 
         Button login2 = findViewById(R.id.buttongologin);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        login2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Login.this, Login.class);
@@ -28,12 +29,28 @@ public class Login extends AppCompatActivity {
 //                finish();
             }
 
-            Button login1 = findViewById(R.id.button);
-
-        login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent it = new Intent(Login.this, Login.class);
-                    startActivity(it);
-//                finish();
         });
+        Button login3 = findViewById(R.id.buttonaccount);
+
+        login3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Login.this, Login.class);
+                startActivity(it);
+            }
+        });
+
+        Button login1 = findViewById(R.id.buttoncontactus);
+
+        login1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Login.this, Login.class);
+                startActivity(it);
+//                finish();
+                Toast.makeText(this,"This is a Toast Message.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+}
