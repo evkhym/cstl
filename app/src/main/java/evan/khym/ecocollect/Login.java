@@ -24,9 +24,10 @@ public class Login extends AppCompatActivity {
         login2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Login.this, Login.class);
+                Intent it = new Intent(Login.this, MainActivity.class);
                 startActivity(it);
 //                finish();
+                Toast.makeText(getApplicationContext(),"Login Successful.", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -35,7 +36,7 @@ public class Login extends AppCompatActivity {
         login3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Login.this, Login.class);
+                Intent it = new Intent(Login.this, Settings.class);
                 startActivity(it);
             }
         });
@@ -45,10 +46,9 @@ public class Login extends AppCompatActivity {
         login1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Login.this, Login.class);
+                Intent it = new Intent(Login.this, Contact.class);
                 startActivity(it);
 //                finish();
-                Toast.makeText(getApplicationContext(),"This is a Toast Message.", Toast.LENGTH_SHORT).show();
             }
         });
 

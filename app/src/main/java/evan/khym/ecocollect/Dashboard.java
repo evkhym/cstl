@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,9 +24,10 @@ public class Dashboard extends AppCompatActivity {
         dash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Dashboard.this, Dashboard.class);
+                Intent it = new Intent(Dashboard.this, Report.class);
                 startActivity(it);
 //                finish();
+                Toast.makeText(getApplicationContext(),"Message Sent.", Toast.LENGTH_SHORT).show();
             }
         });
     }

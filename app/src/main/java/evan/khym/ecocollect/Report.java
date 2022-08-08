@@ -378,5 +378,17 @@ public class Report extends AppCompatActivity
             }
         });
         builder.create().show();
+
+        Button logingo = findViewById(R.id.test);
+
+        logingo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Report.this, Report.class);
+                startActivity(it);
+//                finish();
+                Toast.makeText(getApplicationContext(),"This is a Toast Message.", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

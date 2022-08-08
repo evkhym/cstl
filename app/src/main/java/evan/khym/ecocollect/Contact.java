@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,7 @@ public class Contact extends AppCompatActivity {
                 email.putExtra(Intent.EXTRA_SUBJECT, "test@test");
                 email.putExtra(Intent.EXTRA_TEXT, "내용 미리보기 (미리적을 수 있음)");
                 startActivity(email);
+                Toast.makeText(getApplicationContext(),"Message Sent.", Toast.LENGTH_SHORT).show();
             }
         });
 
